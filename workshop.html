@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cari Workshop - KreN.id</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-yellow-50 via-green-50 to-yellow-100 font-sans">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between px-8 py-4 bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <h1 class="text-xl font-bold text-gray-800">KreN.id - JourneyMates</h1>
+    <nav>
+      <ul class="flex gap-6 text-gray-700 font-medium">
+        <li><a href="index.html" class="hover:text-green-600">Home</a></li>
+        <li><a href="about.html" class="hover:text-green-600">Tentang</a></li>
+        <li><a href="barang.html" class="hover:text-green-600">Cari Barang</a></li>
+        <li><a href="workshop.html" class="hover:text-green-600">Cari Workshop</a></li>
+        <li><a href="UMKM.html" class="hover:text-green-600">Gabung UMKM</a></li>
+        <li><a href="login.html" class="hover:text-green-600">Daftar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-28 pb-16 px-6 md:px-16 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">Daftar Workshop</h2>
+
+    <!-- Workshop 1 -->
+    <div class="bg-white shadow-md rounded-2xl overflow-hidden mb-6">
+      <div class="flex items-start cursor-pointer toggle-item" data-target="work1">
+        <img src="lilin aroma.jpeg" alt="Workshop Lilin Aroma" class="w-40 h-32 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Workshop Lilin Aroma with NyalaNusa</h3>
+          <p class="text-gray-600">Belajar dan bawa pulang lilin aroma hasil pengolahan limbah!</p>
+          <p class="text-green-700 font-bold mt-2">Rp150.000 / peserta</p>
+          <p class="text-sm text-gray-500">Minimal 15 peserta per sesi</p>
+        </div>
+      </div>
+      <div id="work1" class="hidden border-t p-4">
+        <p class="text-gray-700 mb-4">
+          Minyak jelantah yang menjadi momok restoran di berbagai tempat wisata disulap menjadi lilin wangi estetik dan ramah lingkungan untuk relaksasi.
+        </p>
+        <a href="form-workshop.html" 
+           class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg font-medium shadow hover:bg-green-700 transition">
+           Daftar Workshop
+        </a>
+      </div>
+    </div>
+
+    <!-- Workshop 2 -->
+    <div class="bg-white shadow-md rounded-2xl overflow-hidden mb-6">
+      <div class="flex items-start cursor-pointer toggle-item" data-target="work2">
+        <img src="workshop tas.png" alt="Workshop Tas Upcycle" class="w-40 h-32 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Workshop Tas Upcycle</h3>
+          <p class="text-gray-600">Kegiatan kreatif membuat tas ramah lingkungan.</p>
+          <p class="text-green-700 font-bold mt-2">Rp120.000 / peserta</p>
+          <p class="text-sm text-gray-500">Minimal 10 peserta per sesi</p>
+        </div>
+      </div>
+      <div id="work2" class="hidden border-t p-4">
+        <p class="text-gray-700 mb-4">
+          Belajar mengolah kain perca dari industri kerajinan lokal, spanduk bekas dan logistik wisata lainnya menjadi tas fungsional dan modis untuk kegiatan sehari-hari.
+        </p>
+        <a href="form-workshop.html" 
+           class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg font-medium shadow hover:bg-green-700 transition">
+           Daftar Workshop
+        </a>
+      </div>
+    </div>
+
+    <!-- Workshop 3 -->
+    <div class="bg-white shadow-md rounded-2xl overflow-hidden mb-6">
+      <div class="flex items-start cursor-pointer toggle-item" data-target="work3">
+        <img src="sabun organik.png" alt="Workshop Sabun Organik" class="w-40 h-32 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Workshop Sabun Organik with SabunDaun</h3>
+          <p class="text-gray-600">Transformasi Minyak Jelantah menjadi sabun mandi!</p>
+          <p class="text-green-700 font-bold mt-2">Rp100.000 / peserta</p>
+          <p class="text-sm text-gray-500">Minimal 5 peserta per sesi</p>
+        </div>
+      </div>
+      <div id="work3" class="hidden border-t p-4">
+        <p class="text-gray-700 mb-4">
+          Minyak jelantah hotel yang terbuang begitu saja, diubah menjadi sabun sehat untuk dipakai dan mengurangi limbah cair yang sering muncul dari aktivitas pariwisata kuliner.
+        </p>
+        <a href="form-workshop.html" 
+           class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg font-medium shadow hover:bg-green-700 transition">
+           Daftar Workshop
+        </a>
+      </div>
+    </div>
+
+    <!-- Workshop 4 -->
+    <div class="bg-white shadow-md rounded-2xl overflow-hidden mb-6">
+      <div class="flex items-start cursor-pointer toggle-item" data-target="work4">
+        <img src="tasbih daur ulang.jpeg" alt="Workshop Tasbih Upcycle" class="w-40 h-32 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Workshop Tasbih Upcycle with SahabatBumi</h3>
+          <p class="text-gray-600">Belajar membuat tasbih dari manik-manik daur ulang.</p>
+          <p class="text-green-700 font-bold mt-2">Rp100.000 / peserta</p>
+          <p class="text-sm text-gray-500">Minimal 10 peserta per sesi</p>
+        </div>
+      </div>
+      <div id="work4" class="hidden border-t p-4">
+        <p class="text-gray-700 mb-4">
+          Belajar membuat tasbih dari manik-manik plastik hasil daur ulang botol minuman dan kemasan sekali pakai. Selain spiritual, tasbih ini juga menjadi simbol kepedulian lingkungan.
+        </p>
+        <a href="form-workshop.html" 
+           class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg font-medium shadow hover:bg-green-700 transition">
+           Daftar Workshop
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <!-- Tombol Back -->
+  <div class="flex justify-center mt-12 mb-12">
+    <a href="index.html" 
+       class="inline-block bg-green-600 text-white px-8 py-3 rounded-lg font-medium shadow hover:bg-green-700 transition">
+       ⬅ Back
+    </a>
+  </div>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center bg-green-700 text-white">
+    <p>&copy; 2025 KreN.id. All rights reserved.</p>
+  </footer>
+
+  <!-- Script Toggle -->
+  <script>
+    document.querySelectorAll('.toggle-item').forEach(item => {
+      item.addEventListener('click', () => {
+        const target = document.getElementById(item.dataset.target);
+        target.classList.toggle('hidden');
+      });
+    });
+  </script>
+</body>
+</html>

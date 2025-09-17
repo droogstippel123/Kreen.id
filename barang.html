@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cari Barang - KreN.id</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-green-50 via-yellow-50 to-green-100 font-sans">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between px-8 py-4 bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <h1 class="text-xl font-bold text-gray-800">KreN.id - JourneyMates</h1>
+    <nav>
+      <ul class="flex gap-6 text-gray-700 font-medium">
+        <li><a href="index.html" class="hover:text-green-600">Home</a></li>
+        <li><a href="about.html" class="hover:text-green-600">Tentang</a></li>
+        <li><a href="barang.html" class="hover:text-green-600">Cari Barang</a></li>
+        <li><a href="workshop.html" class="hover:text-green-600">Cari Workshop</a></li>
+        <li><a href="UMKM.html" class="hover:text-green-600">Gabung UMKM</a></li>
+        <li><a href="login.html" class="hover:text-green-600">Daftar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main class="pt-28 pb-16 px-6 md:px-16 max-w-5xl mx-auto">
+    <h2 class="text-3xl font-bold text-gray-800 mb-10 text-center">Daftar Barang</h2>
+
+    <!-- Item 1 -->
+    <div class="bg-white shadow-md rounded-2xl overflow-hidden mb-6">
+      <div class="flex items-start cursor-pointer toggle-item" data-target="desc1">
+        <img src="mural.jpeg" alt="Mural Tutup Botol (Custom)" class="w-40 h-32 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Mural Tutup Botol (Custom)</h3>
+          <p class="text-gray-600">Panorama indah dari tutup botol daur ulang, pesan kuat tentang keberlanjutan.</p>
+          <p class="text-green-700 font-bold mt-2">Rp100.000</p>
+        </div>
+      </div>
+      <div id="desc1" class="hidden border-t p-4">
+        <p class="text-gray-700 mb-4">
+          Dekorasi dinding unik yang dirangkai dari tutup botol daur ulang yang dapat dicustom langsung oleh anda.
+        </p>
+        <a href="form-barang.html" 
+           class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg font-medium shadow hover:bg-green-700 transition">
+           Order
+        </a>
+      </div>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="bg-white shadow-md rounded-2xl overflow-hidden mb-6">
+      <div class="flex items-start cursor-pointer toggle-item" data-target="desc2">
+        <img src="set-meja.jpeg" alt="Set Meja Kursi" class="w-40 h-32 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Set Meja Kursi</h3>
+          <p class="text-gray-600">Furniture ramah lingkungan dari plastik daur ulang, kokoh & estetik.</p>
+          <p class="text-green-700 font-bold mt-2">Rp300.000</p>
+        </div>
+      </div>
+      <div id="desc2" class="hidden border-t p-4">
+        <p class="text-gray-700 mb-4">
+          Terbuat dari plastik daur ulang yang diolah dengan teknik khusus sehinga menghasilkan furniture kokoh, estetik dan tahan lama untuk penggunaan dalam maupun luar ruangan.
+        </p>
+        <a href="form-barang.html" 
+           class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg font-medium shadow hover:bg-green-700 transition">
+           Order
+        </a>
+      </div>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="bg-white shadow-md rounded-2xl overflow-hidden mb-6">
+      <div class="flex items-start cursor-pointer toggle-item" data-target="desc3">
+        <img src="tas-anyam.webp" alt="Tas Anyaman" class="w-40 h-32 object-cover">
+        <div class="p-4">
+          <h3 class="text-xl font-semibold">Tas Anyaman</h3>
+          <p class="text-gray-600">Tas handmade dari serat alami, modis sekaligus ramah lingkungan.</p>
+          <p class="text-green-700 font-bold mt-2">Rp40.000</p>
+        </div>
+      </div>
+      <div id="desc3" class="hidden border-t p-4">
+        <p class="text-gray-700 mb-4">
+          Tas handmade yang dibuat dari serat kuat, tahan lama dan ramah lingkungan. cocok digunakan sehari-hari.
+        </p>
+        <a href="form-barang.html" 
+           class="inline-block bg-green-600 text-white px-6 py-2 rounded-lg font-medium shadow hover:bg-green-700 transition">
+           Order
+        </a>
+      </div>
+    </div>
+  </main>
+
+
+  <!-- Script toggle -->
+  <script>
+    document.querySelectorAll(".toggle-item").forEach(item => {
+      item.addEventListener("click", () => {
+        const targetId = item.getAttribute("data-target");
+        const target = document.getElementById(targetId);
+        target.classList.toggle("hidden");
+      });
+    });
+  </script>
+
+<!-- Tombol Back -->
+<div class="flex justify-center mt-12 mb-12">
+  <a href="index.html" 
+     class="inline-block bg-green-600 text-white px-8 py-3 rounded-lg font-medium shadow hover:bg-green-700 transition">
+     ⬅ Back
+  </a>
+</div>
+
+<!-- Footer -->
+<footer class="py-6 text-center bg-green-700 text-white">
+  <p>&copy; 2025 KreN.id. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

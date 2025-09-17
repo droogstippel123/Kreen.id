@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Pendaftaran Workshop - KreN.id</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gradient-to-b from-green-50 via-yellow-50 to-green-100 font-sans">
+
+  <!-- Header -->
+  <header class="flex items-center justify-between px-8 py-4 bg-white shadow-md fixed top-0 left-0 w-full z-50">
+    <h1 class="text-xl font-bold text-gray-800">KreN.id</h1>
+    <nav>
+      <ul class="flex gap-6 text-gray-700 font-medium">
+        <li><a href="index.html" class="hover:text-green-600">Home</a></li>
+        <li><a href="about.html" class="hover:text-green-600">Tentang</a></li>
+        <li><a href="barang.html" class="hover:text-green-600">Cari Barang</a></li>
+        <li><a href="workshop.html" class="hover:text-green-600">Cari Workshop</a></li>
+        <li><a href="UMKM.html" class="hover:text-green-600">Gabung UMKM</a></li>
+        <li><a href="login.html" class="hover:text-green-600">Daftar</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Form -->
+  <main class="pt-28 pb-16 px-6 md:px-16 max-w-3xl mx-auto">
+    <h2 class="text-3xl font-bold text-gray-800 mb-8 text-center">Form Pendaftaran Workshop</h2>
+
+    <!-- Formspree -->
+    <form action="https://formspree.io/f/xyzabcd" method="POST" class="bg-white shadow-md rounded-2xl p-8 space-y-6">
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">Nama Lengkap</label>
+        <input type="text" name="nama" required placeholder="Masukkan nama lengkap"
+          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-500">
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">Email</label>
+        <input type="email" name="email" required placeholder="contoh@email.com"
+          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-500">
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">Nomor WhatsApp</label>
+        <input type="tel" name="whatsapp" required placeholder="08xxxxxxxxxx"
+          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-500">
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">Pilih Tanggal Workshop (Oktober 2025)</label>
+        <select name="tanggal" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-500">
+          <option value="">-- Pilih Tanggal --</option>
+          <option value="2025-10-05">5 Oktober 2025</option>
+          <option value="2025-10-12">12 Oktober 2025</option>
+          <option value="2025-10-19">19 Oktober 2025</option>
+          <option value="2025-10-26">26 Oktober 2025</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">Jumlah Peserta</label>
+        <input type="number" name="peserta" min="10" max="25" required placeholder="Minimal 10, maksimal 25"
+          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-500">
+        <p class="text-sm text-gray-500 mt-1">Minimal 10 peserta, maksimal 25 peserta per sesi.</p>
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">Metode Pembayaran</label>
+        <select name="pembayaran" required class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-500">
+          <option value="">-- Pilih --</option>
+          <option value="transfer">Transfer Bank</option>
+          <option value="ewallet">E-Wallet (OVO, GoPay, DANA)</option>
+          <option value="cod">COD (Bayar di Tempat)</option>
+        </select>
+      </div>
+
+      <div>
+        <label class="block text-gray-700 font-medium mb-2">Catatan</label>
+        <textarea name="catatan" placeholder="Contoh: butuh sertifikat, request topik tambahan"
+          class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-green-500"></textarea>
+      </div>
+
+      <div class="text-center">
+        <button type="submit"
+          class="bg-green-600 text-white px-8 py-3 rounded-lg font-medium shadow hover:bg-green-700 transition">
+          Daftar Workshop
+        </button>
+      </div>
+    </form>
+     
+</body>
+</html>
+
